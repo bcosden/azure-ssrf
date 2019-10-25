@@ -1,0 +1,10 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - apache2
+  - php
+  - libapache2-mod-php
+runcmd:
+  - git clone https://github.com/bcosden/azure-ssrf.git /home/azureuser/ssrf
+  - cp /home/azureuser/ssrf/index.php /var/www/html/
+  - rm -rf /home/azureuser/ssrf

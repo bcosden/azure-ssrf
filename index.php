@@ -2,7 +2,9 @@
 
 /**
  *  Check if the 'url' GET variable is set
- *  Example - http://localhost/?url=http://testphp.vulnweb.com/images/logo.gif
+ *  Example1 - http://ipaddr/?url=http://testphp.vulnweb.com/images/logo.gif
+ *  Example2 - http://ipaddr/?url=http://localhost/server-status
+ *  Example3 - http://169.254.169.254/metadata/instance?api-version=2017-08-01
  **/
 if (isset($_GET['url'])){
 	$url = $_GET['url'];

@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "publicIPAddresses_appgw_pip_domainNameLabel": {
+            "value": "sarosssrf90123"
+        },
+        "virtualMachines_ssrfvm01_name": {
+            "value": "ssrfvm01"
+        },
+        "applicationGateways_appgw01_name": {
+            "value": "appgw01"
+        },
+        "publicIPAddresses_appgw_pip_name": {
+            "value": "ssrfappgw_pip"
+        },
+        "networkInterfaces_ssrfvm0167_name": {
+            "value": "ssrfvm0167_nic"
+        },
+        "publicIPAddresses_ssrfvm01_ip_name": {
+            "value": "ssrfvm01_pip"
+        },
+        "virtualNetworks_az_ssrf_rg_vnet_name": {
+            "value": "ssrf_rg_vnet"
+        },
+        "networkSecurityGroups_ssrfvm01_nsg_name": {
+            "value": "ssrfvm01_nsg"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC26KlLkgaT1XbPxJ2WKg2nyOlmixvttIYc9+quuj/VzDz5J6azBLK8OqjEWv67I5A2iE0BQ9nqKUsDONc7xMywC1+gJhFagmcjrdMU6zg1QhFc5w1DAuVjFk5xN3omtBllIBIt2NWN1/vP5fra8lAA//dhWJLG3OFwX/UZzpcTjAXY72YZHnuEZOMfOONZVeIeLjNEWOM0x1E2ipv6RQS7rkYy1/ra5eIDs8br0MUKtJsU4IuRhDQNS0vU4jBwaW8NwVrwlwpTo0o5RIFZ8UjT85N1FnmUTzEn1zTFVnLLaAR6lUenSzy8inh0rG82a521J9Q6IAwjlr7wZnaWanv5"
+        }
+    }
+}
