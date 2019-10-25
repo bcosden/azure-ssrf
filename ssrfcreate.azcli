@@ -2,12 +2,5 @@ az login
 
 az group create --name az-ssrf-rg --location eastus
 
-az vm create \
-    --resource-group az-ssrf-rg \
-    --name ssrfvm01 \
-    --image UbuntuLTS \
-    --admin-username azureuser \
-    --generate-ssh-keys \
-    --custom-data cloud-init.txt
+az group deployment create --resource-group az-ssrf-rg --template-file template.json --parameters parameters.json
 
-az vm open-port --port 80 --resource-group az-ssrf-rg --name ssrfvm01
